@@ -19,19 +19,19 @@
               <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto  ml-auto">
                   <li class="nav-item">
-                    <a class="nav-link active text-white" aria-current="page" href="#home-section">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" aria-current="page" href="#home-section">Home<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#about-section">About me<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#about-section">About me<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#skills-section" >Skills<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#skills-section" >Skills<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#works-section">Works</a>
+                    <a class="nav-link" href="#works-section">Works</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="#contacts-section">Contact me</a>
+                    <a class="nav-link" href="#contacts-section">Contact me</a>
                   </li>
                   
                   
@@ -216,6 +216,7 @@
 
 </section>
 
+
 <section class="p-5 bg-light" id="contacts-section">
   <div class="container">
     <h1 class="text-center" style="padding: 11px;">Contact me</h1>
@@ -225,32 +226,34 @@
       
       <form>
         <div class="form-row">
-          <div class="form-group col-md-6">
+          <div class="form-group">
             <label for="inputEmail4">Name</label>
             <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
           </div>
-          <div class="form-group col-md-6">
+          <div class="form-group">
             <label for="inputPassword4">Place</label>
             <input type="text" class="form-control" id="inputPassword4" placeholder="Place">
           </div>
         </div>
 
         <div class="form-row">
-          <div class="form-group col-md-6">
+          <div class="form-group ">
             <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" >
           </div>
-          <div class="form-group col-md-6">
+          <div class="form-group ">
             <label for="inputPassword4">Mobile</label>
             <input type="tel" class="form-control" id="inputPassword4" placeholder="Mobile">
           </div>
         </div>
         
-        <div class="form-group ">
-          <label for="inputAddress">Message</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Type your messages here...">
-          <textarea class="form-control" cols="30" rows="10"></textarea>  
+        <div class="form-group">
+          <label for="name">Message</label>
+          <textarea class="form-control" name="message" placeholder="Type your message here.." rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+          
         </div>
+        <br>
+        
         
         
         
@@ -262,7 +265,7 @@
     </div>
   </div>
 
-</section>
+</section> 
 
 <footer class="bg-dark">
   <div class="container">
